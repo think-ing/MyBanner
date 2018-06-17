@@ -1,7 +1,7 @@
 # MyBanner
 图片轮播
 
-## Banner的功能主要有：
+# Banner的功能主要有：
 
 实现图片 & 标语展示
 循环播放
@@ -9,7 +9,7 @@
 支持加载本地 & 网络图片
 
 
-## 实现步骤：
+# 实现步骤：
 ### 步骤1. 加入依赖包
 compile 'com.youth.banner:banner:1.1.5'  //指定版本
 
@@ -36,7 +36,13 @@ public class MainActivity extends AppCompatActivity {
             "http://img.zcool.cn/community/0114a856640b6d32f87545731c076a.jpg"};
 
     //设置图片标题:自动对应
-    String[] titles=new String[]{"十大星级品牌联盟，全场2折起","全场2折起","十大星级品牌联盟","嗨购5折不要停","12趁现在","嗨购5折不要停，12.12趁现在","实打实大顶顶顶顶"};
+    String[] titles=new String[]{
+            "十大星级品牌联盟，全场2折起",
+            "全场2折起","十大星级品牌联盟",
+            "嗨购5折不要停",
+            "12趁现在",
+            "嗨购5折不要停，12.12趁现在",
+            "实打实大顶顶顶顶"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,8 +94,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("---mzw---","你点击了：" + position);
             }
         });
-
-
     }
 }
 

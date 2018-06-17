@@ -23,6 +23,7 @@ compile 'com.youth.banner:banner:1.1.5'  //指定版本
 
 ### 步骤3. 在MainActivity布局中定义配置Banner
 public class MainActivity extends AppCompatActivity {
+
     private Banner banner;
     //设置图片资源:url或本地资源
     String[] images= new String[] {
@@ -40,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    
-        
+
+
         banner = (Banner) findViewById(R.id.banner);
 
         //设置样式,默认为:Banner.NOT_INDICATOR(不显示指示器和标题)
@@ -84,9 +85,14 @@ public class MainActivity extends AppCompatActivity {
         banner.setOnBannerClickListener(new Banner.OnBannerClickListener() {//设置点击事件
             @Override
             public void OnBannerClick(View view, int position) {
-                Toast.makeText(getApplicationContext(), "你点击了：" + position, Toast.LENGTH_LONG).show();
+                Log.i("---mzw---","你点击了：" + position);
+//                Toast.makeText(getApplicationContext(), "你点击了：" + position, Toast.LENGTH_LONG).show();
             }
         });
+
+
+    }
+}
 
 
 ### 步骤4. 在Manifest加入网络请求权限

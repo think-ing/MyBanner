@@ -86,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void OnBannerClick(View view, int position) {
                 Log.i("---mzw---","你点击了：" + position);
-//                Toast.makeText(getApplicationContext(), "你点击了：" + position, Toast.LENGTH_LONG).show();
             }
         });
 
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
 ### 步骤4. 在Manifest加入网络请求权限
 <uses-permission android:name="android.permission.INTERNET"/>
-
 
 拷贝自：https://www.jianshu.com/p/d229a647e705
 亲测OK

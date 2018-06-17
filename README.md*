@@ -1,0 +1,19 @@
+# MyBanner
+图片轮播
+
+Banner的功能主要有：
+
+实现图片 & 标语展示
+循环播放
+支持手动切换
+支持加载本地 & 网络图片
+
+步骤1. 加入依赖包
+步骤2. 在需要展示的布局定义Banner布局
+步骤3. 在MainActivity布局中定义配置Banner
+步骤4. 在Manifest加入网络请求权限
+
+
+
+拷贝自：https://www.jianshu.com/p/d229a647e705
+亲测OK
